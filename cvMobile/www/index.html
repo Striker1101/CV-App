@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    /> -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+       initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>CV App</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="app-page" data-page="home">
+        <div id="HomeContianer" class="app-content">
+          <div id="indexOne">
+            <div id="containerImage">
+              <div id="dragBox">
+                <p>Click <strong> OR</strong> Drag image</p>
+                <input type="file" name="image" id="image" accept="image*" />
+              </div>
+              <div id="preview">
+                <button class="hide" id="imageBTN">close</button>
+              </div>
+            </div>
+            <section id="tagLink">
+              <div id="toLink" class="app-button hide" data-target="links">
+                <h1>+</h1>
+              </div>
+              <div id="LinkContent"></div>
+            </section>
+          </div>
+          <div id="indexTwo">
+            <section id="tagName">
+              <div>
+                <h3></h3>
+                <h3></h3>
+                <hr class="hr" />
+              </div>
+              <div id="toLink" class="app-button hide" data-target="names">
+                <h1>+</h1>
+              </div>
+            </section>
+
+            <section id="tagExperience">
+              <div id="ContentExperience">
+                <h4>Experience</h4>
+              </div>
+              <div id="toLink" class="app-button hide" data-target="experience">
+                <h1>+</h1>
+              </div>
+            </section>
+
+            <section id="tagEducation">
+              <div id="ContentEducation">
+                <h4>Education</h4>
+              </div>
+              <div id="toLink" class="app-button hide" data-target="education">
+                <h1>+</h1>
+              </div>
+            </section>
+
+            <section id="tagCommunication">
+              <div id="ContentCommnuication">
+                <h4>Communication</h4>
+                <p></p>
+              </div>
+              <div
+                id="toLink"
+                class="app-button hide"
+                data-target="communication"
+              >
+                <h1>+</h1>
+              </div>
+            </section>
+
+            <section id="tagLeadership">
+              <div id="ContentLeadership">
+                <h4>Leadership</h4>
+                <p></p>
+              </div>
+              <div id="toLink" class="app-button hide" data-target="leadership">
+                <h1>+</h1>
+              </div>
+            </section>
+
+            <section id="reference">
+              <div id="ContentReference">
+                <h4>Reference</h4>
+                <ul id="refernceContent"></ul>
+              </div>
+              <div id="toLink" class="app-button hide" data-target="reference">
+                <h1>+</h1>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="links">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+        </div>
+        <br />
+        <form id="Form" class="app-content">
+          <input
+            placeholder="Facebook "
+            type="text"
+            class="app-input"
+            name="name"
+            id="name"
+            required
+          />
+          <input
+            required
+            placeholder="https://markzec.facebook.com"
+            type="url"
+            class="app-input"
+            name="url"
+            id="url"
+          />
+          <div id="btnLinks" class="app-button green">Add Link</div>
+        </form>
+      </div>
+
+      <div class="app-page" data-page="names">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+          <br />
+        </div>
+        <form id="Form" class="app-content">
+          <input
+            placeholder="FirstName"
+            type="text"
+            class="app-input"
+            name="FirstName"
+            id="FirstName"
+            required
+          />
+          <input
+            placeholder="LastName "
+            type="text"
+            class="app-input"
+            name="LastName"
+            id="LastName"
+            required
+          />
+          <div id="btnName" class="app-button green">Add NAME</div>
+        </form>
+      </div>
+
+      <div class="app-page" data-page="experience">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+          <br />
+        </div>
+        <form id="Form" class="app-content">
+          <input
+            placeholder="stateDate"
+            type="Date"
+            class="app-input"
+            name="stateDate"
+            id="stateDate"
+            required
+          />
+          <input
+            placeholder="endDate"
+            type="Date"
+            class="app-input"
+            name="endDate"
+            id="endDate"
+            required
+          />
+          <input
+            placeholder="title "
+            type="Text"
+            class="app-input"
+            name="title"
+            id="title"
+            required
+          />
+          <input
+            placeholder="position"
+            type="title"
+            class="app-input"
+            name="position"
+            id="position"
+            required
+          />
+          <input
+            placeholder="companyName"
+            type="text"
+            class="app-input"
+            name="companyName"
+            id="companyName"
+            required
+          />
+          <textarea
+            placeholder="summary"
+            type="text"
+            class="app-input"
+            name="summary"
+            id="summary"
+            required
+          ></textarea>
+          <div id="btnExperience" class="app-button green">Add EXPERIENCE</div>
+        </form>
+      </div>
+
+      <div class="app-page" data-page="education">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+          <br />
+        </div>
+        <form id="Form" class="app-content">
+          <input
+            placeholder="Name"
+            type="text"
+            class="app-input"
+            name="nameEducation"
+            id="nameEducation"
+            required
+          />
+          <input
+            placeholder="Location"
+            type="Text"
+            class="app-input"
+            name="location"
+            id="location"
+            required
+          />
+          <textarea
+            placeholder="Details"
+            type="text"
+            class="app-input"
+            name="details"
+            id="details"
+            required
+          ></textarea>
+          <div id="btnEducation" class="app-button green">Add EDUCATION</div>
+        </form>
+      </div>
+
+      <div class="app-page" data-page="communication">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+          <br />
+        </div>
+        <form id="Form" class="app-content">
+          <textarea
+            placeholder="Message"
+            type="text"
+            class="app-input"
+            name="inputCommunication"
+            id="inputCommunication"
+            required
+          ></textarea>
+          <div id="btnCommunication" class="app-button green">
+            Add COMMUNICATION
+          </div>
+        </form>
+      </div>
+
+      <div class="app-page" data-page="leadership">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+          <br />
+        </div>
+        <form id="Form" class="app-content">
+          <textarea
+            placeholder="Message"
+            type="text"
+            class="app-input"
+            name="inputLeadership"
+            id="inputLeadership"
+            required
+          ></textarea>
+          <div id="btnLeadership" class="app-button green">Add Leadership</div>
+        </form>
+      </div>
+
+      <div class="app-page" data-page="reference">
+        <div class="app-topbar">
+          <div class="app-button left blue" data-target="home">back</div>
+          <br />
+        </div>
+        <form id="Form" class="app-content">
+          <input
+            placeholder="Name"
+            type="text"
+            class="app-input"
+            name="inputReference"
+            id="inputReference"
+            required
+          />
+          <div id="btnReference" class="app-button green">Add REFERENCE</div>
+        </form>
+      </div>
+      <div>
+        <button type="submit" onclick="resetCV()">Reset</button>
+        <button type="submit" onclick="save()">Save</button>
+      </div>
+    </div>
+
+    <script src="js/app.min.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/communication.js"></script>
+    <script src="js/leadership.js"></script>
+    <script src="js/reference.js"></script>
+    <script src="js/education.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/name.js"></script>
+    <script src="js/lists.js"></script>
+    <script src="js/CV_Template.js"></script>
+    <script src="js/contoller.js"></script>
+  </body>
+</html>
